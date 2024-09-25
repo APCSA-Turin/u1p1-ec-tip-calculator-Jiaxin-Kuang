@@ -39,7 +39,8 @@ public class ExtraCredit {
         result.append("Total cost per person: " + "$" + totalPerPersonRounded + "\n");
         result.append("-------------------------------\n");
 
-        //the two lines should go below result.append("-------------------------------\n"); 
+        //the two lines should go below result.append("-------------------------------\n");
+
         result.append("Items ordered:\n");
         result.append(items);
 
@@ -54,6 +55,7 @@ public class ExtraCredit {
         String items; 
 
         //Your scanner object and while loop should go here
+        //Keeps adding to userItem until -1 is typed. Then, itemList will be set to userItem and be printed in the console. 
 
         String itemList = "";
         String userItem = " ";

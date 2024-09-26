@@ -62,7 +62,7 @@ public class ExtraCredit {
         while(!userItem.equals("-1")){ 
             Scanner sc = new Scanner(System.in);
             System.out.println("Enter an item or type '-1' to finish: "); 
-            userItem = sc.nextLine(); //userItem whatever the user types
+            userItem = sc.nextLine(); //userItem becomes whatever the user types
             if(!userItem.equals("-1")){ //if userItem is not -1, it'll be stored in itemList. If it is -1, it'll not be added in itemList and the loop will end after this
                 itemList = itemList + "\n" + userItem; 
             }

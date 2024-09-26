@@ -67,7 +67,7 @@ public class ExtraCredit {
                 itemList = itemList + "\n" + userItem; 
             }
         }
-        items = itemList;
+        items = itemList; //items becomes itemList, so that all items will be printed out 
 
         System.out.println(calculateTip(2,5,29.56,items));
     }

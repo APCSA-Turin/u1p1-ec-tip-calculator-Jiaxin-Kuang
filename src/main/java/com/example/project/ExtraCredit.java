@@ -57,14 +57,14 @@ public class ExtraCredit {
         //Your scanner object and while loop should go here
         //Keeps adding to userItem until -1 is typed. Then, itemList will be set to userItem and be printed in the console. 
 
-        String itemList = "";
-        String userItem = " ";
-        while(!userItem.equals("-1")){
+        String itemList = ""; //Will store all of the items
+        String userItem = " "; //Will store latest item user typed  
+        while(!userItem.equals("-1")){ 
             Scanner sc = new Scanner(System.in);
-            System.out.println("Enter an item or type '-1' to finish: ");
-            userItem = sc.nextLine();
-            if(!userItem.equals("-1")){
-                itemList = itemList + "\n" + userItem;
+            System.out.println("Enter an item or type '-1' to finish: "); 
+            userItem = sc.nextLine(); //userItem whatever the user types
+            if(!userItem.equals("-1")){ //if userItem is not -1, it'll be stored in itemList. If it is -1, it'll not be added in itemList and the loop will end after this
+                itemList = itemList + "\n" + userItem; 
             }
         }
         items = itemList;
